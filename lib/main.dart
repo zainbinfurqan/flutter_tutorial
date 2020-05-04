@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:new_app/src/screen/editProfile/EditProfile.dart';
+import 'package:new_app/src/screen/LocalStorage/LocalStorage.dart';
+import 'package:new_app/src/screen/RoutingPages/Screen1.dart';
+import 'package:new_app/src/screen/RoutingPages/Screen2.dart';
+import 'package:new_app/src/screen/RoutingPages/Screen3.dart';
+// import 'package:new_app/src/screen/editProfile/EditProfile.dart';
 // import 'package:new_app/src/screen/imageGallery/ImageGallery.dart';
 // import 'package:new_app/src/screen/imageGallery/ImageGallery_1.dart';
 import 'package:new_app/src/services/api-services/api-services.dart';
@@ -26,7 +30,15 @@ class MyApp extends StatelessWidget {
       ),
       // home: ImageGallery(),
       // home: ImageGallery_1(),
-      home: EditProfile(),
+      // home: EditProfile(),
+      initialRoute: '/home',
+      routes: {
+        '/home': (context) => Screen1(),
+        '/profile': (context) => Screen2(),
+        '/project': (context) => Screen3(),
+      },
+      // home:Screen1(),
+      // home: LocalStoragess(),
     );
   }
 }
