@@ -24,3 +24,24 @@ import 'package:new_app/src/screen/Drawer/project.dart';
       },
       // home:Screen1(),
       // home: LocalStoragess(),
+      
+//-----------drawer-----------//
+      child: ListView(
+        children: <Widget>[
+          DrawerHeader(child: Text("Drawer Header")),
+          ListTile(
+            leading: Icon(Icons.person),
+            title: Text("Profile"),
+            onTap: () {
+              Navigator.popAndPushNamed(context, '/profile');
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.file_upload),
+            title: Text("Project"),
+            onTap: () {
+              Navigator.popAndPushNamed(context, '/project');
+            },
+          )
+        ],
+      ),

@@ -21,9 +21,9 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/home',
       routes: {
-        '/home': (context) => Screen1(),
-        '/profile': (context) => Screen2(),
-        '/project': (context) => Screen3()
+        '/home': (context) => Home(),
+        '/profile': (context) => Profile(),
+        '/project': (context) => Project()
       },
     );
   }

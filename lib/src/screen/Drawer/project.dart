@@ -13,7 +13,6 @@ class _ProjectState extends State<Project> {
       appBar: AppBar(
         title: Center(child: Text("Project")),
       ),
-      drawer: HomeDrawer(),
     );
   }
 }

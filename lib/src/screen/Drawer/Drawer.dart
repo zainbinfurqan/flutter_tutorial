@@ -7,50 +7,30 @@ class HomeDrawer extends StatefulWidget {
 
 class _HomeDrawerState extends State<HomeDrawer> {
   @override
+  void initState() {
+    // Navigator.pop(context);
+  }
+
+  @override
   Widget build(BuildContext context) {
     // return Scaffold(
     return Drawer(
-      child: ListView(
-        children: <Widget>[
-          DrawerHeader(child: Text("Drawer Header")),
-          ListTile(
+        child: ListView(
+      children: <Widget>[
+        DrawerHeader(child: Text("Header")),
+        ListTile(
+            onTap: () {
+              Navigator.popAndPushNamed(context, '/profile');
+            },
             leading: Icon(Icons.person),
-            title: Text("Profile"),
+            title: Text("Profile")),
+        ListTile(
             onTap: () {
-              Navigator.pushNamed(context, '/profile');
+              Navigator.popAndPushNamed(context, '/project');
             },
-          ),
-          ListTile(
             leading: Icon(Icons.file_upload),
-            title: Text("Project"),
-            onTap: () {
-              Navigator.pushNamed(context, '/project');
-            },
-          )
-        ],
-      ),
-    );
-    //   appBar: AppBar(
-    //     title: Center(
-    //       child: Text("----HOME----"),
-    //     ),
-    //   ),
-    //   drawer: Drawer(
-    //     child: ListView(
-    //       children: <Widget>[
-    //         DrawerHeader(child: Text("Drawer Header")),
-    //         ListTile(
-    //           leading: Icon(Icons.person),
-    //           title: Text("Profile"),
-    //           onTap: (){},
-    //         ),
-    //         ListTile(
-    //           leading: Icon(Icons.file_upload),
-    //           title: Text("Project"),
-    //         )
-    //       ],
-    //     ),
-    //   ),
-    // );
+            title: Text("Project")),
+      ],
+    ));
   }
 }
