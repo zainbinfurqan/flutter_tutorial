@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:new_app/src/screen/LocalStorage/LocalStorage.dart';
-import 'package:new_app/src/screen/RoutingPages/Screen1.dart';
-import 'package:new_app/src/screen/RoutingPages/Screen2.dart';
-import 'package:new_app/src/screen/RoutingPages/Screen3.dart';
-// import 'package:new_app/src/screen/editProfile/EditProfile.dart';
-// import 'package:new_app/src/screen/imageGallery/ImageGallery.dart';
-// import 'package:new_app/src/screen/imageGallery/ImageGallery_1.dart';
+import 'package:new_app/src/screen/Drawer/Home.dart';
+import 'package:new_app/src/screen/Drawer/Profile.dart';
+import 'package:new_app/src/screen/Drawer/project.dart';
+import 'package:new_app/src/screen/RoutingPages/Home.dart';
+import 'package:new_app/src/screen/RoutingPages/Profile.dart';
+import 'package:new_app/src/screen/RoutingPages/Project.dart';
+
 import 'package:new_app/src/services/api-services/api-services.dart';
 
 void main() => runApp(MyApp());
@@ -17,28 +17,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      // home: ImageGallery(),
-      // home: ImageGallery_1(),
-      // home: EditProfile(),
       initialRoute: '/home',
       routes: {
         '/home': (context) => Screen1(),
         '/profile': (context) => Screen2(),
-        '/project': (context) => Screen3(),
+        '/project': (context) => Screen3()
       },
-      // home:Screen1(),
-      // home: LocalStoragess(),
     );
   }
 }

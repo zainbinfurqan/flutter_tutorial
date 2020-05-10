@@ -1,0 +1,26 @@
+ 
+ // import 'package:new_app/src/screen/Drawer/Drawer.dart';
+import 'package:new_app/src/screen/Drawer/Home.dart';
+import 'package:new_app/src/screen/Drawer/Profile.dart';
+import 'package:new_app/src/screen/Drawer/project.dart';
+// import 'package:new_app/src/screen/LocalStorage/LocalStorage.dart';
+// import 'package:new_app/src/screen/RoutingPages/Screen1.dart';
+// import 'package:new_app/src/screen/RoutingPages/Screen2.dart';
+// import 'package:new_app/src/screen/RoutingPages/Screen3.dart';
+// import 'package:new_app/src/screen/editProfile/EditProfile.dart';
+// import 'package:new_app/src/screen/imageGallery/ImageGallery.dart';
+// import 'package:new_app/src/screen/imageGallery/ImageGallery_1.dart';
+
+ // home: ImageGallery(),
+      // home: ImageGallery_1(),
+      // home: EditProfile(),
+      // home: HomeDrawer(),
+      // home: Home(),
+      initialRoute: '/home',
+      routes: {
+        '/home': (context) => Home(),
+        '/profile': (context) => Profile(),
+        '/project': (context) => Project(),
+      },
+      // home:Screen1(),
+      // home: LocalStoragess(),
