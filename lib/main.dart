@@ -5,8 +5,10 @@ import 'package:new_app/src/screen/Drawer/project.dart';
 import 'package:new_app/src/screen/RoutingPages/Home.dart';
 import 'package:new_app/src/screen/RoutingPages/Profile.dart';
 import 'package:new_app/src/screen/RoutingPages/Project.dart';
+import 'package:new_app/src/screen/VideoPicker/VideoPicker.dart';
 import 'package:new_app/src/screen/dataTransfer/page1.dart';
 import 'package:new_app/src/screen/dataTransfer/page2.dart';
+import 'package:new_app/src/screen/imageGallery/ImageGallery.dart';
 import 'package:new_app/src/screen/upload/index.dart';
 
 import 'package:new_app/src/services/api-services/api-services.dart';
@@ -22,10 +24,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/page-1',
+      initialRoute: '/VideoPicker',
       routes: {
-        '/page-1': (context) => Page_1(),
-        '/page-2': (context) => Page_2()
+        '/VideoPicker': (context) => VideoPicker(),
+        // '/page-2': (context) => Page_2()
         // '/home': (context) => Home(),
         // '/profile': (context) => Profile(),
         // '/project': (context) => Project(),

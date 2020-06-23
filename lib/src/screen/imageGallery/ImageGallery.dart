@@ -66,9 +66,9 @@ class _ImageGalleryState extends State<ImageGallery> {
                         children: List.generate(imageArray.length, (generator) {
                           var img = imageArray[generator];
                           return Container(
-                            padding: EdgeInsets.all(5),
-                            // decoration: BoxDecoration(border: Border.all(width: 1)),
-                            child: Image.file(img));
+                              padding: EdgeInsets.all(5),
+                              // decoration: BoxDecoration(border: Border.all(width: 1)),
+                              child: Image.file(img));
                         }),
                       ),
               )
